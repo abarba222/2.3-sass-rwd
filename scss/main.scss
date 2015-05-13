@@ -16,22 +16,19 @@ header{
 }
 
 .top{
-
-}
-
-h4{
-  /* text-align:center; */
 }
 
 .boxes{
-  @include span-columns(12);
-  list-style:none;
-  background-color:red;
-  height:40px;
+  display:inline-block;
+  float:right;
 }
 
 .boxes li{
-  @include span-columns(1 of 12);
+  width:60px;
+  height:60px;
+  display:inline-block;
+  list-style:none;
+  background-color:red;
 }
 
 .navigate{
@@ -48,6 +45,7 @@ h4{
 
 .top-image{
   background-image:url("../images/top-image.png");
+  border-width:5px solid white;
 }
 
 .articles{
@@ -68,6 +66,30 @@ button{
   color:red;
 }
 
+.skateboarders{
+  @include span-columns(12);
+}
+
+.sk8er-1{
+  background-image:url("../images/sk8er-1.png");
+  @include span-columns(4 of 12);
+}
+
+.sk8er-2{
+  background-image:url("../images/sk8er-2.png");
+  @include span-columns(4 of 12);
+}
+
+.sk8er-3{
+  background-image:url("../images/sk8er-3.png");
+  @include span-columns(8 of 12);
+}
+
+.sk8er-4{
+  background-image:url("../images/sk8er-4.png");
+  @include span-columns(4 of 12);
+}
+
 
 .skateboards{
   @include span-columns(12);
@@ -80,6 +102,9 @@ button{
 
 footer{
   @include span-columns(12);
+  background-color:white;
+  margin-top:20px;
+  padding:20px;
 }
 
 .contact-us{

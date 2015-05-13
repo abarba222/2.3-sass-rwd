@@ -20,27 +20,16 @@ body {
     content: "";
     display: table; }
 
-h4 {
-  /* text-align:center; */ }
-
 .boxes {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  list-style: none;
-  background-color: red;
-  height: 40px; }
-  .boxes:last-child {
-    margin-right: 0; }
+  display: inline-block;
+  float: right; }
 
 .boxes li {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 6.17215%; }
-  .boxes li:last-child {
-    margin-right: 0; }
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  list-style: none;
+  background-color: red; }
 
 .navigate {
   float: left;
@@ -62,7 +51,8 @@ h4 {
     margin-right: 0; }
 
 .top-image {
-  background-image: url("../images/top-image.png"); }
+  background-image: url("../images/top-image.png");
+  border-width: 5px solid white; }
 
 .articles {
   float: left;
@@ -91,6 +81,50 @@ h4 {
 button {
   color: red; }
 
+.skateboarders {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .skateboarders:last-child {
+    margin-right: 0; }
+
+.sk8er-1 {
+  background-image: url("../images/sk8er-1.png");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .sk8er-1:last-child {
+    margin-right: 0; }
+
+.sk8er-2 {
+  background-image: url("../images/sk8er-2.png");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .sk8er-2:last-child {
+    margin-right: 0; }
+
+.sk8er-3 {
+  background-image: url("../images/sk8er-3.png");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .sk8er-3:last-child {
+    margin-right: 0; }
+
+.sk8er-4 {
+  background-image: url("../images/sk8er-4.png");
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .sk8er-4:last-child {
+    margin-right: 0; }
+
 .skateboards {
   float: left;
   display: block;
@@ -107,7 +141,10 @@ footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px; }
   footer:last-child {
     margin-right: 0; }
 
