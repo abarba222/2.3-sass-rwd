@@ -2,5 +2,90 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 body{
-  background-image:url(scss/images/bg.jpeg);
+  background-image: url("../images/bg.jpeg");
+  height:auto;
+  /* width:1200px; */
+}
+
+.container{
+  @include outer-container(1024px);
+}
+
+header{
+
+}
+
+.top{
+
+}
+
+h4{
+  /* text-align:center; */
+}
+
+.boxes{
+  @include span-columns(12);
+  list-style:none;
+  background-color:red;
+  height:40px;
+}
+
+.boxes li{
+  @include span-columns(1 of 12);
+}
+
+.navigate{
+  @include span-columns(12);
+
+}
+
+.nav{
+  @include span-columns(3 of 12);
+  background-color:red;
+  text-align:center;
+  color:white;
+}
+
+.top-image{
+  background-image:url("../images/top-image.png");
+}
+
+.articles{
+  @include span-columns(12);
+}
+
+.tony-hawk,
+.rodney-mullen,
+.ray-barbee{
+  @include span-columns(4 of 12);
+  background-color:white;
+  padding:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+button{
+  color:red;
+}
+
+
+.skateboards{
+  @include span-columns(12);
+  background-color:white;
+}
+
+.skateboards img{
+  padding:18px;
+}
+
+footer{
+  @include span-columns(12);
+}
+
+.contact-us{
+  @include span-columns(6);
+}
+
+.contact-info{
+  @include span-columns(6);
 }
