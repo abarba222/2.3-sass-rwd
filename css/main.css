@@ -20,6 +20,12 @@ body {
     content: "";
     display: table; }
 
+header {
+  height: 125px; }
+
+.top {
+  float: right; }
+
 .boxes {
   display: inline-block;
   float: right; }
@@ -79,13 +85,16 @@ body {
     margin-right: 0; }
 
 button {
-  color: red; }
+  color: red;
+  margin-left: 95px; }
 
 .skateboarders {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  color: white;
+  text-align: center; }
   .skateboarders:last-child {
     margin-right: 0; }
 
@@ -112,7 +121,8 @@ button {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%; }
+  width: 65.88078%;
+  background-image: no-repeat center center; }
   .sk8er-3:last-child {
     margin-right: 0; }
 
@@ -162,4 +172,33 @@ footer {
   margin-right: 2.35765%;
   width: 48.82117%; }
   .contact-info:last-child {
+    margin-right: 0; }
+
+.contact-info input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin: 5px; }
+  .contact-info input:last-child {
+    margin-right: 0; }
+
+.contact-info textarea {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin: 5px; }
+  .contact-info textarea:last-child {
+    margin-right: 0; }
+
+.contact-info button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin: 5px;
+  background-color: red;
+  color: white; }
+  .contact-info button:last-child {
     margin-right: 0; }

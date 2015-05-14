@@ -12,10 +12,12 @@ body{
 }
 
 header{
+  height:125px;
 
 }
 
 .top{
+  float:right;
 }
 
 .boxes{
@@ -64,10 +66,13 @@ header{
 
 button{
   color:red;
+  margin-left:95px;
 }
 
 .skateboarders{
   @include span-columns(12);
+  color:white;
+  text-align:center;
 }
 
 .sk8er-1{
@@ -83,6 +88,7 @@ button{
 .sk8er-3{
   background-image:url("../images/sk8er-3.png");
   @include span-columns(8 of 12);
+  background-image: no-repeat center center;
 }
 
 .sk8er-4{
@@ -113,4 +119,22 @@ footer{
 
 .contact-info{
   @include span-columns(6);
+
+}
+
+.contact-info input{
+  @include span-columns(6);
+  margin:5px;
+}
+
+.contact-info textarea{
+  @include span-columns(6);
+  margin:5px;
+}
+
+.contact-info button{
+  @include span-columns(6);
+  margin:5px;
+  background-color:red;
+  color:white;
 }
