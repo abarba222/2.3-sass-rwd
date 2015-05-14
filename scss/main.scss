@@ -1,0 +1,149 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+body{
+  background: url("../images/bg.jpeg") 0% 0% fixed no-repeat;
+  @include prefixer(background-size, cover, webkit moz spec);
+}
+
+.container{
+  @include outer-container(1028px);
+}
+
+header{
+  height:125px;
+
+}
+
+.top{
+  float:right;
+}
+
+.boxes{
+  display:inline-block;
+  float:right;
+}
+
+.boxes li{
+  width:60px;
+  height:60px;
+  display:inline-block;
+  list-style:none;
+  background-color:red;
+}
+
+.navigate{
+  @include span-columns(12);
+
+}
+
+.nav{
+  @include span-columns(3 of 12);
+  background-color:red;
+  text-align:center;
+  color:white;
+  display:block;
+  height:20px;
+}
+
+.top-image{
+  background-image:url("../images/top-image.png");
+  border-width:5px solid white;
+}
+
+.articles{
+  @include span-columns(12);
+}
+
+.tony-hawk,
+.rodney-mullen,
+.ray-barbee{
+  @include span-columns(4 of 12);
+  background-color:white;
+  padding:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+button{
+  color:red;
+  margin-left:95px;
+}
+
+.skateboarders{
+  @include span-columns(12);
+  border:2px solid white;
+  color:white;
+  text-transform:uppercase;
+  height:224px;
+}
+
+.left-container{
+  @include span-columns(8)
+}
+
+.sk8er-1{
+  background-image:url("../images/sk8er-1.png");
+  @include span-columns(4 of 8);
+  @include omega();
+  height:465px;
+}
+
+.sk8er-2{
+  background-image:url("../images/sk8er-2.png");
+  @include span-columns(4 of 8);
+}
+
+.sk8er-3{
+  background-image:url("../images/sk8er-3.png");
+  @include span-columns(8 of 8);
+  height:465px;
+}
+
+.sk8er-4{
+  background-image:url("../images/sk8er-4.png");
+  @include span-columns(4);
+}
+
+
+.skateboards{
+  @include span-columns(12);
+  background-color:white;
+}
+
+.skateboards img{
+  padding:18px;
+}
+
+footer{
+  @include span-columns(12);
+  background-color:white;
+  margin-top:20px;
+  padding:20px;
+}
+
+.contact-us{
+  @include span-columns(6);
+}
+
+.contact-info{
+  @include span-columns(6);
+
+}
+
+.contact-info input{
+  @include span-columns(6);
+  margin:5px;
+}
+
+.contact-info textarea{
+  @include span-columns(6);
+  margin:5px;
+}
+
+.contact-info button{
+  @include span-columns(6);
+  margin:5px;
+  background-color:red;
+  color:white;
+}
