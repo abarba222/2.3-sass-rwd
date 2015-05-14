@@ -2,13 +2,12 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 body{
-  background-image: url("../images/bg.jpeg");
-  height:auto;
-  /* width:1200px; */
+  background: url("../images/bg.jpeg") 0% 0% fixed no-repeat;
+  @include prefixer(background-size, cover, webkit moz spec);
 }
 
 .container{
-  @include outer-container(1024px);
+  @include outer-container(1028px);
 }
 
 header{
@@ -43,6 +42,8 @@ header{
   background-color:red;
   text-align:center;
   color:white;
+  display:block;
+  height:20px;
 }
 
 .top-image{
@@ -71,29 +72,37 @@ button{
 
 .skateboarders{
   @include span-columns(12);
+  border:2px solid white;
   color:white;
-  text-align:center;
+  text-transform:uppercase;
+  height:224px;
+}
+
+.left-container{
+  @include span-columns(8)
 }
 
 .sk8er-1{
   background-image:url("../images/sk8er-1.png");
-  @include span-columns(4 of 12);
+  @include span-columns(4 of 8);
+  @include omega();
+  height:465px;
 }
 
 .sk8er-2{
   background-image:url("../images/sk8er-2.png");
-  @include span-columns(4 of 12);
+  @include span-columns(4 of 8);
 }
 
 .sk8er-3{
   background-image:url("../images/sk8er-3.png");
-  @include span-columns(8 of 12);
-  background-image: no-repeat center center;
+  @include span-columns(8 of 8);
+  height:465px;
 }
 
 .sk8er-4{
   background-image:url("../images/sk8er-4.png");
-  @include span-columns(4 of 12);
+  @include span-columns(4);
 }
 
 
